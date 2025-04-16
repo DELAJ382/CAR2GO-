@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car2Go Rentals </title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        header {
+            background-color: red; /* Blue header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333; /* Dark gray navbar */
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center the navigation items */
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 0px; /* Add some space between items */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px; /* Add padding around the links */
+        }
+        nav a:hover {
+            background-color: #555; /* Slightly lighter background on hover */
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white; /* White section background */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        .car-image {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Makes the image a block element */
+            margin: 10px auto; /* Centers the image */
+        }
+
+        footer {
+            background-color: #333; /* Dark gray footer */
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form label {
+            display: block; /* Makes labels stack on top of inputs */
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+            border: 1px solid #ccc; /* Adds a light gray border */
+        }
+
+        form button {
+            background-color: red; /* Blue button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: darkred; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car2Go Rentals (BOOK NOW)</h1>
+        <p>Your journey starts here.</p>
+    </header>
+
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CARS.HTML">Our Cars</a></li>
+          <li><a href="carform.html">Book Now</a></li>
+          <li><a href="ABOUTUS.HTML">About Us</a></li>
+          <li><a href="CONTACT.HTML">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Welcome to Car2Go Rentals</h2>
+        <p>We offer a wide range of vehicles to suit your needs, from economy cars to luxury SUVs.  Browse our selection and find the perfect car for your next adventure.</p>
+        <img src="image 2g/1739228459880.jpg" alt="car Image" class="car-image">  </section>
+       
+    <section>
+        <h2>Fill in your details</h2>
+        
+        <form action="https://formspree.io/f/xrbpjnve" method="POST"> <div class="form-group">
+       
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="car-type">Car Type:</label>
+            <select id="car-type" name="car-type">
+                <option value="sedan">Economy</option>
+                <option value="suv">SUV</option>
+                <option value="luxury">Luxury</option>
+            </select>
+
+            <label for="pickup-date">Pickup Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date" required>
+
+            <label for="message">Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+            
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2015 Car2Go Rentals. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>

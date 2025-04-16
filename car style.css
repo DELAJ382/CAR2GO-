@@ -1,0 +1,180 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-space img {
+  height: 40px; /* Adjust logo size as needed */
+  border: none;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 0.3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: black;
+  color: white;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 500px;
+  max-width: 500px; /* Adjust image size */
+  display: block;
+  border-radius: 8px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+ font-size: 2.5rem;*/
+  margin-bottom: 1rem;
+  color: red;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rent-button {
+  background-color: red;
+  color: rgb(240, 241, 238);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rent-button:hover {
+  background-color: darkred;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+}
+
+.featured-cars, .how-it-works {
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-cars h2, .how-it-works h2 {
+  color: red;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.car-item {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.car-item img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.car-item h3 {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.car-item p {
+  color: #777;
+}
+
+.how-it-works ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.how-it-works li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.how-it-works strong {
+  color: black;
+}
+
+/* Footer Styles */
+footer {
+  background-color: black;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 2px solid red;
+}
+
+.contact-details {
+  margin-bottom: 1rem;
+}
+
+.contact-details h3 {
+  color: red;
+  margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+  margin-bottom: 0.3rem;
+}

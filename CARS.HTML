@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars - Car2GoRentals</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(to right, red, black);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .car-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .car-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            width: calc(33% - 30px); /* Adjust width for desired number of columns */
+            min-width: 300px; /* Minimum width for responsiveness */
+        }
+
+        .car-item img {
+            width: 100%;
+            height: 55%;
+            display: block; /* Prevent extra space below image */
+        }
+
+        .car-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .car-details h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #007bff;
+        }
+
+        .car-details p {
+            margin-bottom: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .car-details .availability {
+            color: green; /* Or red if not available */
+            font-weight: bold;
+        }
+
+        .car-details .rent-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .car-details .rent-button:hover {
+            background-color: #1e7e34;
+        }
+
+        .footer {
+            background: linear-gradient(to right, red, black);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* For potential absolute positioning of elements within */
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 960px) {
+            .car-item {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .car-item {
+                width: calc(100% - 20px);
+            }
+        }
+        nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: red;
+}
+    </style>
+</head>
+<body>
+  <nav>
+    
+    <div class="header">
+        <h1>Wide Range Of Exotic Cars</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CARS.HTML">Our Cars</a></li>
+          <li><a href="carform.html">Book Now</a></li>
+          <li><a href="ABOUTUS.HTML">About Us</a></li>
+          <li><a href="CONTACT.HTML">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="car-gallery">
+        <div class="car-item">
+            <img src="image 2g/sedancar.jfif" alt="Sedan Car">
+            <div class="car-details">
+                <h3>Sedan Car</h3>
+                <p>Comfortable and fuel-efficient for city driving and longer trips.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="image 2g/suv car.jfif" alt="SUV Car">
+            <div class="car-details">
+                <h3>SUV Car</h3>
+                <p>Spacious and versatile, perfect for families and adventure.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="image 2g/compact car.jfif" alt="Compact Car">
+            <div class="car-details">
+                <h3>Compact Car</h3>
+                <p>Easy to maneuver and park, ideal for navigating busy streets.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="image 2g/luxery car.png" alt="Luxury Car">
+            <div class="car-details">
+                <h3>Luxury Car</h3>
+                <p>Experience premium comfort and style for a memorable drive.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="image 2g/minivan.jfif" alt="Minivan">
+            <div class="car-details">
+                <h3>Minivan</h3>
+                <p>Perfect for large groups or families needing extra passenger and cargo space.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        <div class="car-item">
+            <img src="image 2g/1739228459880.jpg" alt="Prado">
+            <div class="car-details">
+                <h3>Prado</h3>
+                <p>Experience the ultimate in comfort and versatility with our Toyota Prado Rental.</p>
+                <p class="availability">Available</p>
+                <a href="carform.html" class="rent-button">Rent Now</a>
+            </div>
+        </div>
+
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2015 Car2GoRentals. All rights reserved.</p>
+    </div>
+
+    </body>
+</html>

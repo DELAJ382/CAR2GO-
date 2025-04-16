@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - [Your Car Rental Service Name]</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light grey background for the content area */
+            color: #333; /* Dark grey text for readability */
+        }
+
+        /* Red and Black Styling for Header and Footer */
+        .header, .footer {
+            background: linear-gradient(to right, red, black); /* Gradient from red to black */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        /* Contact Form Styling */
+        .contact-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensure padding and border are inside the element's total width and height */
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Allow vertical resizing of the textarea */
+            min-height: 100px;
+        }
+
+        .form-group button {
+            background-color: #007bff; /* Blue button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact Information Styling */
+        .contact-info {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(235, 226, 226);
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: red;
+}
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Contact Us</h1>
+    
+     <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CARS.HTML">Our Cars</a></li>
+          <li><a href="carform.html">Book Now</a></li>
+          <li><a href="ABOUTUS.HTML">About Us</a></li>
+          <li><a href="CONTACT.HTML">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+    <div class="contact-container">
+        <h2>Send us a Message</h2>
+        <form action="https://formspree.io/f/xrbpjnve" method="POST"> <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h2>Our Contact Information</h2>
+        <p>If you prefer to contact us directly, please use the information below:</p>
+        <p><strong>Address:</strong> KUMASI GHANA</p>
+        <p><strong>Phone:</strong> 0553392444, 0542339199, 0544859288 </p>
+        <p><strong>Email:</strong> <a href="mailto:[car2gorentals1@gmail.com]">car2gorentals1</a></p>
+        <p><strong>Business Hours:</strong> 24/7 Available Monday - Saturday</p>
+        </div>
+
+    <div class="footer">
+        <p>&copy; 2015 Car2GoRentals. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
